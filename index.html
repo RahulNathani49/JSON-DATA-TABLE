@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> JSON DATA </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <table border="1" class="w-100 text-center" id="MyTable">
+        <tr class="text-center">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+            <th>GENDER</th>
+            <th colspan="3">PHONE</th>
+        </tr>
+
+    </table>
+
+
+    <script>
+        var list = {
+            "contacts": [{
+                    "id": "c200",
+                    "name": "Ravi Tamada",
+                    "email": "ravi@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c201",
+                    "name": "Johnny Depp",
+                    "email": "johnny_depp@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c202",
+                    "name": "Leonardo Dicaprio",
+                    "email": "leonardo_dicaprio@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c203",
+                    "name": "John Wayne",
+                    "email": "john_wayne@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c204",
+                    "name": "Angelina Jolie",
+                    "email": "angelina_jolie@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "female",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c205",
+                    "name": "Dido",
+                    "email": "dido@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "female",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c206",
+                    "name": "Adele",
+                    "email": "adele@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "female",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c207",
+                    "name": "Hugh Jackman",
+                    "email": "hugh_jackman@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c208",
+                    "name": "Will Smith",
+                    "email": "will_smith@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c209",
+                    "name": "Clint Eastwood",
+                    "email": "clint_eastwood@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c2010",
+                    "name": "Barack Obama",
+                    "email": "barack_obama@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c2011",
+                    "name": "Kate Winslet",
+                    "email": "kate_winslet@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "female",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                },
+                {
+                    "id": "c2012",
+                    "name": "Eminem",
+                    "email": "eminem@gmail.com",
+                    "address": "xx-xx-xxxx,x - street, x - country",
+                    "gender": "male",
+                    "phone": {
+                        "mobile": "+91 0000000000",
+                        "home": "00 000000",
+                        "office": "00 000000"
+                    }
+                }
+            ]
+        }
+        var MyTable = document.getElementById("MyTable");
+        var newrow;
+        var j;
+        var index;
+        for (i = 0; i < list.contacts.length; i++) {
+            newrow = MyTable.insertRow(i+1);
+            
+            newrow.innerHTML="<td>"+list.contacts[i].id+"</td><td>"+list.contacts[i].name+"</td><td>"+list.contacts[i].email + "</td><td>" + list.contacts[i].address + "</td><td>" + list.contacts[i].gender+ "</td><td>" + list.contacts[i].phone.mobile + "</td><td>" + list.contacts[i].phone.office + "</td><td>"+list.contacts[i].phone.home+"</td>";
+        }
+
+    </script>
+</body>
+
+</html>
